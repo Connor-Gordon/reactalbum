@@ -2,24 +2,40 @@
     box-sizing: border-box;
 }
 
+.main {
+    background: url("https://scontent.flas1-2.fna.fbcdn.net/v/t1.0-9/49710217_3099275506765177_3744000670701715456_o.jpg?_nc_cat=105&_nc_ht=scontent.flas1-2.fna&oh=531c9ea019234e333533b1c5f23e45aa&oe=5CC78D26");
+    background-position: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
 .home {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     width: 750px;
     margin: auto;
+
 }
 
 h1 {
     text-align: center;
+    font-size: 50px;
 }
 
+.albumHead {
+    text-align: center;
+    color: white;
+}
+
+
 .folders {
-    background-color: beige;
+    background-color: rgba(150,150,150,.8);
     width:210px;
     height:270px;
     margin: 10px;
     padding: 5px;
+    
 }
 
 
@@ -50,19 +66,32 @@ h1 {
 
 .listDivs {
     padding: 5px;
+    color: white;
+    font-size: 18px;
 }
 
 .container {
     display: flex;
 }
 
-.picList {
+.move {
+    margin:auto;
+}
+
+.picList {    
     display: flex;
     flex-wrap: wrap;
-    width: 700px;
     list-style: none;
+    width: 750px;
+
 }
 
 .picDisplay {
+    background-color: rgba(150,150,150,.9);
+    width:210px;
+    height:270px;
+    margin: 10px;
     padding: 5px;
+    color: white;
+    
 }

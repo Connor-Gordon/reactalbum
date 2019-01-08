@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import { BrowserRouter as Link} from 'react-router-dom'
 import "normalize.css/normalize.css"
 import "../styles/App.css"
 import axios from 'axios'
 
-import App from './App'
-import Home from './Home'
 
 
 
@@ -18,6 +16,7 @@ class Albums extends Component {
     }
 
     componentDidMount(){
+        const id = this.props.match.params.id
         axios.get('http://localhost:3001/albums/').then(resp =>{
             console.log(resp)
             this.setState({
@@ -26,23 +25,35 @@ class Albums extends Component {
                
             })
         })
-        axios.get('http://localhost:3001/images/').then(resp =>{
+        axios.get(`http://localhost:3001/albums/${id}/?_embed=images`).then(resp =>{
             this.setState({
-                images: resp.data
+                images: resp.data.images
+            })
+        })
+    }
+
+    componentWillReceiveProps(newProps){
+        // const id = newProps.match.params.id
+        axios.get('http://localhost:3001/albums/').then(resp =>{
+            console.log(resp)
+            this.setState({
+                albums: resp.data
+                
+               
             })
         })
     }
 
 
+
   render() {
     return (
-      <Router>
-          <div>
-            <h1>{this.state.album.name}lhj</h1>
-                <Link to={'/'}><h2>Back to Home page</h2></Link> 
+      <div>
+        <div className="main">
+            <Link to={'/'}><h2>Back to Home page</h2></Link> 
             <div className="container">
                 
-                <div >
+                <div>
                     <ul className="albumList">
                         {this.state.albums.map(Album => (
                         <li key={"Album" + Album.id}>
@@ -56,13 +67,13 @@ class Albums extends Component {
                     ))}
                     </ul>
                 </div>
-                <div>
+                <div className="move">
                     <ul className="picList">
-                        {this.state.images.filter(dic => dic.albumId == 5).map(Pic => (
+                        {this.state.images.filter(dic => dic.albumId === 4).map(Pic => (
                             <li className="picDisplay" key={"Pic" + Pic.id}>
                                 <Link to={"/Pic/" + Pic.id}>
                                     <p>{Pic.picName}</p>
-                                    <img className="image" src={Pic.picUrl}/>
+                                    <img className="image" src={Pic.picUrl} alt="pictffffure"/>
                                 </Link>
                             </li>
                             
@@ -71,7 +82,7 @@ class Albums extends Component {
                 </div>
             </div>
         </div>
-      </Router>
+      </div>
     );
   }
 }

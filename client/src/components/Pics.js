@@ -1,12 +1,7 @@
-import React, { Component, Fragment, Link } from 'react';
-import { BrowserRouter as Router, Route} from 'react-router-dom'
+import React, { Component, Fragment } from 'react';
 import "normalize.css/normalize.css"
 import "../styles/App.css"
 import axios from 'axios'
-
-import App from './App'
-import Home from './Home'
-import Albums from './Albums'
 
 
 
@@ -18,9 +13,9 @@ class Pics extends Component {
 
     componentDidMount(){
         
-        axios.get('http://localhost:3001/images').then(resp2 =>{
+        axios.get('http://localhost:3001/images/:id').then(resp =>{
             this.setState({
-                images: resp2.data
+                images: resp.data
             })
         })
     }
@@ -29,7 +24,7 @@ class Pics extends Component {
       <Fragment>
           <div>
             <h1>Pic Name</h1>
-            <div>picture here</div>
+           <img src={this.state.images.picUrl} alt="imttt"/>
           </div>
       </Fragment>
     );

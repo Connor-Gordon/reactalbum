@@ -14,11 +14,9 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Route exact path="/" exact component={ Home }></Route>
-          {/* when JSON is working, add /:id after albums to display album id to url */}
-          <Route path="/Album/:id" exact component={ Albums }></Route>
-          {/* when JSON is working, add /:id after pics to display pic id to url */}
-          <Route path="/Pic/:id" exact component={ Pics }></Route>
+            <Route exact path="/"  component={ Home }></Route>
+            <Route path="/Album/:id"  component={ Albums }></Route>
+            <Route path="/Pic/:id"  component={ Pics }></Route>
         </div>
       </Router>
     );

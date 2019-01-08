@@ -1,26 +1,26 @@
 { "albums": [
         {
-            "id": "1",
+            "id": 1,
             "coverPic": "https://scontent.flas1-1.fna.fbcdn.net/v/t31.0-8/21083458_2107559399270131_9117571012393272302_o.jpg?_nc_cat=102&_nc_ht=scontent.flas1-1.fna&oh=dd6ca8c3f855193065b3fbb83d2cb6f1&oe=5C9314E4",
             "name": "YellowStone"
         },{
-            "id": "2",
+            "id": 2,
             "coverPic": "https://scontent.flas1-2.fna.fbcdn.net/v/t31.0-8/21122227_2107572595935478_6310310195438273025_o.jpg?_nc_cat=109&_nc_ht=scontent.flas1-2.fna&oh=e1caf31f408fd7c1fd3482b21f27d00d&oe=5CCB9086",
             "name": "Grand Teton"
         },{
-            "id": "3",
+            "id": 3,
             "coverPic": "https://scontent.flas1-2.fna.fbcdn.net/v/t1.0-9/49285343_3099268373432557_7912796404664238080_o.jpg?_nc_cat=107&_nc_ht=scontent.flas1-2.fna&oh=c8a4b3385f2d508631850d95ab8a25eb&oe=5C92E53E",
             "name": "Mt. Wilson"
         },{
-            "id": "4",
+            "id": 4,
             "coverPic": "https://scontent.flas1-2.fna.fbcdn.net/v/t1.0-9/49710217_3099275506765177_3744000670701715456_o.jpg?_nc_cat=105&_nc_ht=scontent.flas1-2.fna&oh=531c9ea019234e333533b1c5f23e45aa&oe=5CC78D26",
             "name": "Griffith Peak"
         },{
-            "id": "5",
+            "id": 5,
             "coverPic": "https://scontent.flas1-2.fna.fbcdn.net/v/t1.0-9/49603639_3099278370098224_7170428380045639680_n.jpg?_nc_cat=109&_nc_ht=scontent.flas1-2.fna&oh=1a3e1b4aa4f08b6b87a9dcd455aa5f7e&oe=5C911DC1",
             "name": "Hawaii"
         },{
-            "id": "6",
+            "id": 6,
             "coverPic": "https://scontent.flas1-1.fna.fbcdn.net/v/t1.0-9/49813529_3099285670097494_6904211871654477824_o.jpg?_nc_cat=108&_nc_ht=scontent.flas1-1.fna&oh=742cf37e0134ec1114f02b3c18f205c3&oe=5CC7F129",
             "name": "Others"
         }
