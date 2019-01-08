@@ -1,12 +1,7 @@
 * {
     box-sizing: border-box;
-}
-
-.main {
-    background: url("https://scontent.flas1-2.fna.fbcdn.net/v/t1.0-9/49710217_3099275506765177_3744000670701715456_o.jpg?_nc_cat=105&_nc_ht=scontent.flas1-2.fna&oh=531c9ea019234e333533b1c5f23e45aa&oe=5CC78D26");
-    background-position: no-repeat;
-    background-size: cover;
     color: white;
+    background-color: darkcyan;
 }
 
 .home {
@@ -26,6 +21,7 @@ h1 {
 .albumHead {
     text-align: center;
     color: white;
+    
 }
 
 
@@ -35,21 +31,11 @@ h1 {
     height:270px;
     margin: 10px;
     padding: 5px;
-    
+    border-radius: 10px;
 }
 
 
 .coverPic {    
-    position: relative;
-    float: left;
-    width:  200px;
-    height: 200px;
-    background-position: 50% 50%;
-    background-repeat:   no-repeat;
-    background-size:     cover;
-}
-
-.image {
     position: relative;
     float: left;
     width:  200px;
@@ -94,4 +80,26 @@ h1 {
     padding: 5px;
     color: white;
     
+}
+
+.singlePic {
+    height: 500px;
+}
+
+.picContainer {
+    display: flex;
+    justify-content: space-between
+}
+
+.buttons {
+    color: white;
+    background-color: rgba(150,150,150,.9);
+    position: relative;
+    top: 250px;
+}
+
+.picTrap {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
 }

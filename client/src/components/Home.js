@@ -22,7 +22,6 @@ componentDidMount(){
 
   render() {
     return (
-      <Router>
         <div className="main">
             <h1>My Albums</h1>
             <div className="container">
@@ -30,10 +29,8 @@ componentDidMount(){
                 {this.state.albums.map(Album => (
                     <li className="folders" key={"Album" + Album.id}>
                         <Link to={"/Album/" + Album.id}>
-                            <div>
                                 <h3 className="albumHead">{Album.name}</h3>
-                                <p><img className="coverPic" src={Album.coverPic} alt="imw2"/></p>
-                            </div>
+                                <img className="coverPic" src={Album.coverPic}/>
                         </Link>
                     </li>
                     
@@ -41,7 +38,6 @@ componentDidMount(){
                 </ul>
             </div>
         </div>
-      </Router>
     );
   }
 }

@@ -14,9 +14,9 @@ class App extends Component {
     return (
       <Router>
         <div>
-            <Route exact path="/"  component={ Home }></Route>
-            <Route path="/Album/:id"  component={ Albums }></Route>
-            <Route path="/Pic/:id"  component={ Pics }></Route>
+          <Route exact path="/"  component={ Home } />
+          <Route path="/Album/:id"  component={ Albums }/>
+          <Route path="/Pic/:id"  component={ Pics }/>
         </div>
       </Router>
     );
